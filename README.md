@@ -3,6 +3,8 @@ Projet Web Resome final
 
 Projet réalisé dans le cadre du cours d'INF 472W - Modal Web - Application Web - à l'Ecole polytechnique
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 Installation de l'environnement de travail
 
       - XAMPP (qui regroupe un serveur Apache, un logiciel de base de données MySQL, et PHP qui permet de gérer les pages web dynamiques), 
@@ -54,3 +56,16 @@ Installer un IDE
 Navigateur web
 
         Pensez à bien mettre à jour votre navigateur web préféré! Prévoyez d'avoir au moins Chrome ou Firefox d'installé.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Maintenance
+
+Ajout d'une langue: Se referer aux instructions écrites dans le fichier traduction/Mode d'emploi.php
+
+Modification des mails: Y acceder dans content/mail ...
+ATTENTION penser à modifier les liens envoyé par mails (ceux correspondent actuellement à http://localhost/Modal_WEB_Resome_final/...).
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

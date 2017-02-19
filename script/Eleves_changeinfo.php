@@ -11,12 +11,12 @@ require ('../utilities/Utilisateur_en_Attente.php');
 $return['result'] = 'Success';
 $return['errortel'] = false;
 
-if (isset($_POST['firstname']) && isset($_POST['name']) && isset($_POST['tel']) && isset($_POST['address']) && isset($_POST['birthdate']) && isset($_POST['country']) && isset($_POST['statut'])) {
+if (isset($_POST['firstname']) && isset($_POST['name']) && isset($_POST['tel']) && isset($_POST['address']) && isset($_POST['emailcontact']) && isset($_POST['birthdate']) && isset($_POST['country']) && isset($_POST['statut'])) {
     // empecher les injections SQL
 
-    $chainechar = ['firstname', 'name', 'tel', 'address', 'birthdate', 'country', 'statut'];
+    $chainechar = ['firstname', 'name', 'tel', 'address', 'emailcontact', 'birthdate', 'country', 'statut'];
 
-    for ($i = 0; $i <= 6; $i++) {
+    for ($i = 0; $i <= 7; $i++) {
         $var[$chainechar[$i]] = trim($_POST[$chainechar[$i]]);
         $var[$chainechar[$i]] = strip_tags($var[$chainechar[$i]]);
         $var[$chainechar[$i]] = htmlspecialchars($var[$chainechar[$i]]);
@@ -34,7 +34,7 @@ if (isset($_POST['firstname']) && isset($_POST['name']) && isset($_POST['tel']) 
     // ----------------- Fin test sur les différentes erreurs possibles ----------------------------
     //Mise a jour des données si absence d'erreurs
     if ($return['result'] == 'Success') {
-        Utilisateur::updateUser1($var['firstname'], $var['name'], $var['tel'], $var['address'], $var['birthdate'], $var['country'], $var['statut'], $var['id']);
+        Utilisateur::updateUser1($var['firstname'], $var['name'], $var['tel'], $var['address'],$var['emailcontact'], $var['birthdate'], $var['country'], $var['statut'], $var['id']);
     }
 } else {
 

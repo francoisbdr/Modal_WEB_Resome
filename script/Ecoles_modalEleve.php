@@ -40,6 +40,14 @@ echo <<<FIN2
                             </td>
                         </tr>
                         <tr>                           
+                            <td><h5>Il ne répond pas?</h5></td>
+                            <td><button id="appel" name=$user->id class='btn btn-block btn-danger'> Ne répond pas</input> </td>
+                        </tr>
+                        <tr>                           
+                            <td><h5>Nombre d'appels manqués</h5></td>
+                            <td id="nombreappels">$user->appel</td>
+                        </tr>
+                        <tr>                           
                             <td><h5>Adresse Mail</h5></td>
                             <td id="email">$user->email</td>
                         </tr>
@@ -110,10 +118,13 @@ FIN3;
 
 if ($pageinf == 1) {
     echo <<<FIN4
-            <div class="col-xs-6">
+            <div class="col-xs-4">
                 <button id="recruit" name=$user->id class="btn btn-block btn-success" >Proposer un cours</input>
             </div>
-            <div class="col-xs-6">
+            <div class="col-xs-4">
+                <button type="button" id="delete"  name=$user->id class="btn btn-block btn-danger">Supprimer</button>
+            </div>
+            <div class="col-xs-4">
                 <button type="button" class="btn btn-block btn-primary" data-dismiss="modal" aria-hidden="true">Annuler</button>
             </div>
 FIN4;

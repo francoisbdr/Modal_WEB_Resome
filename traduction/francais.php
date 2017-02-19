@@ -123,6 +123,7 @@ $TRANSLATIONS[md5("Prénom")]="Prénom";
 $TRANSLATIONS[md5("Nom")]="Nom";
 $TRANSLATIONS[md5("Numéro de téléphone")]="Numéro de téléphone";
 $TRANSLATIONS[md5("Adresse")]="Adresse";
+$TRANSLATIONS[md5("Email du contact à Resome")]="Email du contact à Resome";
 $TRANSLATIONS[md5("Date de naissance")]="Date de naissance";
 $TRANSLATIONS[md5("Pays d'origine")]="Pays d'origine";
 $TRANSLATIONS[md5("Statut administratif")]="Statut administratif";

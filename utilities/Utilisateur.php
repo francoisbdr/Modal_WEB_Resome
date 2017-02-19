@@ -7,7 +7,9 @@ class Utilisateur {
     public $email;
     public $password;
     public $inscriptiondate;
+    public $appel;
 //Informations générales (1)
+    public $emailcontact;
     public $firstname;
     public $name;
     public $tel;
@@ -72,10 +74,10 @@ class Utilisateur {
         }
     }
 
-    public static function updateUser1($firstname, $name, $tel, $address, $birthdate, $country, $statut, $id) {//Pour mettre à jour les informations générales / nombre de champs adapté au fichier Inf_changeinfo
+    public static function updateUser1($firstname, $name, $tel, $address, $emailcontact, $birthdate, $country, $statut, $id) {//Pour mettre à jour les informations générales / nombre de champs adapté au fichier Inf_changeinfo
         $dbh = Database::connect();
-        $sth = $dbh->prepare('UPDATE `refugees` SET `firstname`=?,`name`=?,`tel`=?,`address`=?,`birthdate`=?,`country`=?,`statut`=? WHERE id=? ');
-        $sth->execute(array($firstname, $name, $tel, $address, $birthdate, $country, $statut, $id));
+        $sth = $dbh->prepare('UPDATE `refugees` SET `firstname`=?,`name`=?,`tel`=?,`address`=?,`emailcontact`=?,`birthdate`=?,`country`=?,`statut`=? WHERE id=? ');
+        $sth->execute(array($firstname, $name, $tel, $address, $emailcontact, $birthdate, $country, $statut, $id));
         $dbh = null; // Déconnexion de MySQL
     }
 
@@ -83,6 +85,13 @@ class Utilisateur {
         $dbh = Database::connect();
         $sth = $dbh->prepare('UPDATE `refugees` SET `studies`=?,`certificate`=?,`CIEP`=?,`futurestudies`=?,`langages`=? WHERE id=? ');
         $sth->execute(array($studies, $certificate, $CIEP, $futurestudies, $langages, $id));
+        $dbh = null; // Déconnexion de MySQL
+    }
+    
+      public static function updateAppel($appel, $id) {//Pour mettre à jour l'appel manqué
+        $dbh = Database::connect();
+        $sth = $dbh->prepare('UPDATE `refugees` SET `appel`=? WHERE id=? ');
+        $sth->execute(array($appel, $id));
         $dbh = null; // Déconnexion de MySQL
     }
     

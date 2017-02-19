@@ -156,6 +156,7 @@ $(document).ready(function () {
                 name: $("#name").val(),
                 tel: $("#tel").val(),
                 address: $("#address").val(),
+                emailcontact: $("#emailcontact").val(),
                 birthdate: $("#birthdate").val(),
                 country: $("#country").val(),
                 statut: $("#statut").val()

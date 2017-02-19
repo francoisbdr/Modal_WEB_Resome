@@ -211,6 +211,13 @@ $(document).ready(function () {
         });
         window.location.reload();
     });
+    
+    $(document).on("click", "#appel", function (event) {
+        $studentid = this.name;
+        $.post('script/Ecoles_appel.php', {studentid: $studentid}, function () {
+        });
+        window.location.reload();
+    });
 
 
 

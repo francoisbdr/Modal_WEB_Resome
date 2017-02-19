@@ -38,7 +38,7 @@ $(document).ready(function () {
         $("#ecolesenattenteblock").hide();
         $("#ecolesblock").hide();
         $("#elevesblock").show();
-        history.pushState({}, null, 'http://localhost/Modal_WEB_Resome/index.php?page=admin#2');
+        history.pushState({}, null, 'index.php?page=admin#2');
     });
 
 // ------------------- Pour rester sur le meme onglet actif lors du rechargement

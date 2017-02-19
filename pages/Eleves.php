@@ -20,6 +20,7 @@ $user = Utilisateur::getUtilisateurID($_SESSION['user']);
                         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
                         <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        
                     </ol>
 
                     <!-- Wrapper for slides -->
@@ -236,6 +237,10 @@ $user = Utilisateur::getUtilisateurID($_SESSION['user']);
                             <td><h5><?php echo l("Adresse")?></h5></td>
                             <td><?php echo $user->address ?></td>
                         </tr>
+                         <tr>                           
+                            <td><h5><?php echo l("Email du contact à Resome")?></h5></td>
+                            <td><?php echo $user->emailcontact ?></td>
+                        </tr>
                         <tr>
                             <td><h5><?php echo l("Date de naissance")?></h5></td>
                             <td><?php echo $user->birthdate ?></td>
@@ -284,6 +289,10 @@ $user = Utilisateur::getUtilisateurID($_SESSION['user']);
                             <tr>                           
                                 <td><h5><?php echo l("Adresse")?></h5></td>
                                 <td><input  id="address" name="address" type="text" class="form-control" placeholder="<?php echo l("Adresse")?> " value="<?php echo $user->address ?>" maxlength="15" /></td>
+                            </tr>
+                             <tr>                           
+                                <td><h5><?php echo l("Email du contact à Resome")?></h5></td>
+                                <td><input  id="emailcontact" name="emailcontact" type="text" class="form-control" placeholder="<?php echo l("Email du contact à Resome")?> " value="<?php echo $user->emailcontact ?>" maxlength="60" /></td>
                             </tr>
                             <tr>                           
                                 <td><h5><?php echo l("Date de naissance")?></h5></td>
