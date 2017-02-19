@@ -58,6 +58,11 @@ Navigateur web
         Pensez à bien mettre à jour votre navigateur web préféré! Prévoyez d'avoir au moins Chrome ou Firefox d'installé.
 
 
+Base de données
+
+        Penser à importer la base sql donnée dans le repo GitHub, dans phpmyadmin
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Maintenance
